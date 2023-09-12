@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=board/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.board.dao{BoardDAO.java[BoardDAO" modifiers="513" timestamp="1694225167693"/>
-    <typeInfo handle="=board/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.board.service{BoardService.java[BoardService" modifiers="513" timestamp="1694225277001"/>
+    <typeInfo handle="=board/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.board.dao{BoardDAO.java[BoardDAO" modifiers="513" timestamp="1694483040785"/>
+    <typeInfo handle="=board/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.board.service{BoardService.java[BoardService" modifiers="513" timestamp="1694483356779"/>
+    <typeInfo handle="=board/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.board.dao{ReplyDAO.java[ReplyDAO" modifiers="513" timestamp="1694497848641"/>
+    <typeInfo handle="=board/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.board.service{ReplyService.java[ReplyService" modifiers="513" timestamp="1694497400493"/>
 </typeInfoHistroy>

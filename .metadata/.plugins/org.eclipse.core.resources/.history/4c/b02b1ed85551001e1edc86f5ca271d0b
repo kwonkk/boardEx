@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.board.mappers.reply">
+
+
+<!-- 댓글 조회 --><!-- 파라미터 타입은 매퍼에 들어오는 데이터, result타입은 매퍼가 내보내는 데이터 -->
+<select id="replyList" parameterType="int" resultType="com.board.domain.BoardVO">
+	select
+		rno,bno,writer,content,regDate
+	from 
+		tbl_reply
+	where
+		bno = #{bno}
+
+</select>
+
+<!-- 댓글 작성 -->
+<insert id="replyWrite" parameterType="com.board.domain.ReplyVO">
+insert into
+tbl_reply(bno,writer,content,regDate)
+values(#{bno},#{writer},#{content},sysdate())
+</insert>
+
+
+<!-- 댓글 수정 -->
+<update id = "replyModify" parameterType="com.board.domain.ReplyVO">
+	update tbl_reply set
+		set
+			writer = #{writer},
+			content = #{content},
+			
+		where rno = #{rno}
+		and bno = #{bno}
+</update>
+
+<!-- 댓글 삭제 -->
+<delete id="replyDelete" parameterType="com.board.domain.ReplyVO">
+delete from tbl_reply
+where rno=#{rno}
+and bno = ${bno}
+</delete>
+
+
+</mapper>
